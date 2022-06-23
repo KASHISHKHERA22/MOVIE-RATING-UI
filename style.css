@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+body {
+    background-color: rgb(147, 46, 160);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search {
+    border-radius: 0.75rem;
+    background-color: transparent;
+}
+
+#search:focus {
+    border-radius: 0.75rem;
+    background-color: rgb(18, 18, 18);
+    color: aliceblue;
+}
+
+#search:hover {
+    border-radius: 0.85rem;
+    background-color: rgb(22, 1, 1);
+}
+
+#main {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+
+.movie {
+    width: 16rem;
+    margin: 1rem;
+    box-shadow: 0.2px 4px 5px black;
+    border-radius: 0.25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movieInfo {
+    color: antiquewhite;
+    padding: 0.5rem 0.75rem;
+}
+
+.novieInfo h3 {
+    margin: 1rem;
+}
+
+.movieInfo span {
+    margin: 3rem;
+}
+
+.movieInfo span.green {
+    color: lightgreen;
+}
+
+.movieInfo span.orange {
+    color: rgb(228, 136, 8);
+}
+
+.movieInfo span.red {
+    color: rgb(216, 18, 18);
+}
+
+.overview {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    max-height: 100%;
+    background-color: aliceblue;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    color: #b0d6d9;
+    background-color: red;
+    font-size: 1.14rem;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+#btn {
+    background-color: rgb(18, 246, 219);
+    color: black;
+    font-size: 0.75rem;
+    height: 2rem;
+    width: 4rem;
+    font-weight: bold;
+}
+
+
+#footer {
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#footer:hover {
+    text-align: center;
+    background-color: rgb(175, 227, 232);
+    color: black;
+    font-family: cursive;
+}
